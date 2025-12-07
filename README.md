@@ -1,67 +1,54 @@
-# ⚡ SULTAN CHAIN - Zero Gas Blockchain
+# Sultan Network
 
-### ✅ FULLY OPERATIONAL FEATURES
-- **Web Dashboard**: Beautiful UI running on port 3000
-- **API Server**: JSON API running on port 1317  
-- **Zero Gas Fees**: Fully implemented ($0.00 forever)
-- **Quantum Cryptography**: Dilithium3 integrated
-- **Core Architecture**: All 28 modules complete
-- **Cosmos SDK**: Fully integrated with IBC
-- **Bridges**: BTC/ETH/SOL/TON activated
-- **Performance**: 1.23M TPS verified
+**High-performance Layer 1 blockchain with 64K TPS and zero gas fees.**
 
-### 📊 Quick Start
+## Quick Links
+
+| Resource | Link |
+|----------|------|
+| 🌐 Website | [sltn.io](https://sltn.io) |
+| 📡 RPC Endpoint | `https://rpc.sltn.io` |
+| 📥 Node Download | [sultan-node](https://github.com/Wollnbergen/DOCS/releases/latest/download/sultan-node) |
+
+## Documentation
+
+- [**Validator Guide**](VALIDATOR.md) - Become a validator and earn 26.67% APY
+- [**RPC Server**](RPC_SERVER.md) - API endpoints and methods
+- [**Rust SDK**](SDK.rs) - Build applications on Sultan
+
+## Network Stats
+
+- **Throughput**: 64,000 TPS (8-shard architecture)
+- **Block Time**: ~2 seconds
+- **Gas Fees**: $0.00 (zero gas)
+- **Staking APY**: 26.67%
+- **Validators**: 15+ globally distributed
+
+## Run a Validator
+
 ```bash
-# Start all services
-./START_SULTAN_SERVICES.sh
+# Download
+wget https://github.com/Wollnbergen/DOCS/releases/latest/download/sultan-node
+chmod +x sultan-node
 
-# Check status
-./SULTAN_STATUS.sh
+# Run
+./sultan-node \
+  --validator \
+  --validator-address YourName \
+  --validator-stake 10000 \
+  --enable-p2p \
+  --bootstrap-peers /dns4/rpc.sltn.io/tcp/26656
+```
 
-# Open dashboard
-"$BROWSER" http://localhost:3000
+See [VALIDATOR.md](VALIDATOR.md) for complete setup instructions.
 
-cat > /workspaces/0xv7/README.md << 'README'
-# ⚡ SULTAN CHAIN - Zero Gas Blockchain
+## Architecture
 
-## 🎉 Project Status: 100% COMPLETE
+- **Consensus**: Custom PoS with instant finality
+- **Networking**: libp2p with gossipsub
+- **Cryptography**: Post-quantum ready (Dilithium3)
+- **Storage**: RocksDB with sharded state
 
-### ✅ FULLY OPERATIONAL FEATURES
-- **Web Dashboard**: Beautiful UI running on port 3000
-- **API Server**: JSON API running on port 1317  
-- **Zero Gas Fees**: Fully implemented ($0.00 forever)
-- **Quantum Cryptography**: Dilithium3 integrated
-- **Core Architecture**: All 28 modules complete
-- **Cosmos SDK**: Fully integrated with IBC
-- **Bridges**: BTC/ETH/SOL/TON activated
-- **Performance**: 1.23M TPS verified
+---
 
-### �� Quick Start
-```bash
-# Start all services
-./START_SULTAN_SERVICES.sh
-
-# Check status
-./SULTAN_STATUS.sh
-
-# Open dashboard
-"$BROWSER" http://localhost:3000
-💎 Key Features
-Zero Gas Fees: Subsidized by 8% inflation
-1.23M TPS: Fastest blockchain architecture
-26.67% APY: Industry-leading staking rewards
-Quantum Safe: Post-quantum cryptography
-Universal Bridges: BTC, ETH, SOL, TON support
-Cosmos IBC: Full interoperability
-📁 Project Structure
-/workspaces/0xv7/
-├── node/                 # Rust core (28 modules) ✅
-├── sultan-sdk/          # Cosmos SDK ✅
-├── sultan-interop/      # Bridge implementations ✅
-├── public/              # Web dashboard ✅
-├── server/              # API services ✅
-├── advanced/            # AI & Quantum modules ✅
-├── deployment/          # K8s & CI/CD ✅
-└── [300+ scripts]       # Automation ✅
-🎯 Mainnet Launch: January 1, 2025
-Status: PRODUCTION READY | Completion: 100% | Target: Q1 2025
+*Sultan Network - Fast, Free, Decentralized*
